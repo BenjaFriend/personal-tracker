@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  discgram:
+    container_name: personal-tracker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
