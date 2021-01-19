@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Tracker</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="scripts/servoControls.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div id="mainContent">
+  <h1><i class="material-icons">pets</i> Personal Tracker</h1>
+
+  <h2><i class="material-icons">calendar_today</i> Report Task</h2>
+
+  <form id="scheduleEvent" action="/scheduleEvent" method="post">
+
+    <!-- Door -->
+    <div class="input-container">
+      <select id="doorNumSelect" name="door">
+        <option value="1">Door 1</option>
+        <option value="2">Door 2</option>
+      </select>
+    </div>
+
+    <div class="input-container">
+      <p>TTTTTTT</p>
+      <input id="longSubmitButton" type="submit" value="Submit Item" title="Report that you have doing this item">
+    </div>
+
+  </form> <!-- scheduleEvent -->
+
+  <div id="status">
+    <h2>Current Tracks</h2>
+    <p>Your current progress on any tracked items</p>
+    <div id="updatedStatus"></div>
+  </div>
+
+</div> <!-- mainContent -->
+
+</body>
+</html>

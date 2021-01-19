@@ -1,3 +1,6 @@
+# Ignore the DB directory
+/data/*
+
 # Logs
 logs
 *.log

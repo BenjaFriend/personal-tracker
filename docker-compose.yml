@@ -1,9 +1,20 @@
 version: '3'
 
 services:
-  discgram:
-    container_name: personal-tracker
+  personal-tracker-app:
+    container_name: tracker-app
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: AppDockerfile
+    ports: 
+     - '3000:3000'
     restart: unless-stopped
+    links:
+      - tracker-db
+  tracker-db:
+    container_name: tracker-db
+    image: mongo
+    volumes: 
+      - ./data/db:/data/db
+    ports:
+      - '27018:27017'

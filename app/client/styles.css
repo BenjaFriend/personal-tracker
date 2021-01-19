@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu');
+/*
+https://color.adobe.com/Color-2018-color-theme-10801019/edit/?copy=true&base=2&rule=Custom&selected=2&name=Copy%20of%20Color-2018&mode=rgb&rgbvalues=0.011764705882352941,0.6078431372549019,0.8980392156862745,1,0.6274509803921569,0,0,0.5882352941176471,0.5333333333333333,0,0,0,1,1,1&swatchOrder=0,1,2,3,4
+*/
+
+* {
+  font-family: 'Montserrat', cursive;
+}
+
+h1, h2, h3, h4 {
+  color: rgba(1,1,1,0.8);
+}
+
+p {
+  color: rgba(1,1,1,0.7);
+  font-size: normal;
+}
+
+/* Main Content */
+#mainContent {
+  width: 800px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#submitButton {
+  width: 125px;
+}
+
+#longSubmitButton {
+  width: 150px;
+}
+
+.input-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.event {
+  display: inline;
+}
+
+form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+
+/* Tablet kinda adjustments */
+@media screen and (max-width: 910px) {
+  #mainContent {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #mainContent img {
+    width: 300px;
+  }
+}
+
+/** Moible adjustments */
+@media screen and (max-width: 400px) {
+  #mainContent {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #mainContent img {
+    width: 270px;
+  }
+  
+  p {
+    font-size: larger;
+  }
+}
